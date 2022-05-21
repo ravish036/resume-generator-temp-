@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Generator</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="main">
+        <div class="register">
+            <form id="fom" method="post">
+                <h2 id="heading">Resume Generator</h2>
+                <label> First Name : </label><br>
+                <input type="text" name="fname" id="name" placeholder="Enter Your First Name"><br><br>
+
+                <label> Last Name : </label><br>
+                <input type="text" name="lname" id="name" placeholder="Enter Your Last Name"><br><br>
+
+                <label> Your Age : </label><br>
+                <input type="number" name="Age" id="name" placeholder="How old are you ?"><br><br>
+
+                <label> Email : </label>
+                <input type="email" name="email" id="name" placeholder="Enter Your Valid Email"><br><br>
+
+                
+                <label> Gender : </label><br>
+                &nbsp;&nbsp;&nbsp;
+                <input type="radio" name="gender" id="male">
+                &nbsp;
+                <span id="male">Male</span>
+                &nbsp;&nbsp;&nbsp;
+                <input type="radio" name="gender" id="female">
+                &nbsp;
+                <span id="female">Female</span>
+                &nbsp;&nbsp;&nbsp;
+                <input type="radio" name="gender" id="Other">
+                &nbsp;
+                <span id="Other">Other</span><br><br>
+                
+                <label> Contact : </label>
+                <input type="number" name="Contact" class="name" placeholder="Enter Your Valid Contact number"><br><br>
+                
+                <label> Work Experience : </label>
+                <textarea name="workexp" class="name" rows="2" cols="40" placeholder=" Enter Work Experience"></textarea><br><br>
+               
+                <!-- <input type="submit" name="submit" id="submit" value="submit"> -->
+                
+            </form>
+            <div class="output">
+                
+            </div>
+            
+            <div class="btn">
+                <button onclick="toogle()" id="submit">Preview or Edit</button>
+            </div>
+
+        </div>
+        <script src="app.js"></script>
+        </div>
+</body>
+</html>
